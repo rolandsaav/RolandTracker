@@ -151,7 +151,6 @@ body::-webkit-scrollbar-thumb {
   outline: solid var(--secd-bg) 1px;
 }
 
-
 .modal {
   position: absolute;
   top: 100%;

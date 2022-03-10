@@ -18,7 +18,22 @@ window.addEventListener("resize", event => {
 
 document.querySelectorAll(".modal-trigger").forEach((button) => {
     button.addEventListener('click', function(event) {
+        event.stopPropagation()
+        document.querySelectorAll(".modal").forEach((modal) => {
+            if(modal != button.querySelector(".modal"))
+            {
+                modal.classList.add("hidden")
+            }
+            
+        })
         button.querySelector(".modal").classList.toggle("hidden")
+    })
+})
 
+window.addEventListener('click', event => {
+    document.querySelectorAll(".modal").forEach((modal) => {
+        if(!modal.classList.contains("hidden")){
+            modal.classList.add("hidden")
+        }
     })
 })
