@@ -31,7 +31,7 @@
             </div>
             <div class="navbar-center"></div>
             <div class="navbar-right">
-                <div class="button modal-trigger">
+                <div class="button modal-trigger" tabindex="3">
                     <span class="material-icons">add</span>
     
                     <div class="modal hidden">
@@ -39,7 +39,7 @@
                     </div>
                     
                 </div>
-                <div class="button modal-trigger" id="settings-btn">
+                <div class="button modal-trigger" id="settings-btn" tabindex="4">
                     <span class="material-icons">settings</span>
                     
                     <div class="modal hidden">
@@ -50,7 +50,20 @@
         </div>
     
         <div class="sidebar">
-            <a href="/ideas">
+            <a href="/tasks" tabindex="0">
+                <div class="sidebar-item">
+                    <div class="sidebar-icon">
+                        <span class="material-icons">
+                            list_alt
+                        </span>
+                    </div>
+                    <div class="sidebar-link">
+                        Tasks
+                    </div>
+                </div>
+            </a>
+
+            <a href="/ideas" tabindex="1">
                 <div class="sidebar-item">
                     <div class="sidebar-icon">
                         <span class="material-icons">
@@ -63,20 +76,7 @@
                 </div>
             </a>
     
-            <a href="/tasks">
-                <div class="sidebar-item">
-                    <div class="sidebar-icon">
-                        <span class="material-icons">
-                            list_alt
-                        </span>
-                    </div>
-                    <div class="sidebar-link">
-                        Tasks
-                    </div>
-                </div>
-            </a>
-    
-            <a href="/projects">
+            <a href="/projects" tabindex="2">
                 <div class="sidebar-item">
                     <div class="sidebar-icon">
                         <span class="material-icons">

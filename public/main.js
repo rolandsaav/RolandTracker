@@ -30,10 +30,17 @@ document.querySelectorAll(".modal-trigger").forEach((button) => {
     })
 })
 
+document.querySelectorAll(".modal").forEach((modal) => {
+    modal.addEventListener('click', function(event) {
+        event.stopPropagation()
+    })
+})
+
 window.addEventListener('click', event => {
     document.querySelectorAll(".modal").forEach((modal) => {
         if(!modal.classList.contains("hidden")){
             modal.classList.add("hidden")
         }
     })
+    
 })
